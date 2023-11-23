@@ -9,14 +9,13 @@ key_path = "./certificados/4637e4d3ae5d829877ab46d2895b4f356e2a666fba68992e41766
 
 
 client = PubSubClient(
-    out_topic="out_topic",
+    out_topic="device/25/data",
     in_topic="in_topic",
     ca_path=ca_path,
     cert_path=cert_path,
     host=aws_host,
     key_path=key_path,
 )
-
 
 
 client.start()

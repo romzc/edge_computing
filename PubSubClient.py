@@ -30,6 +30,9 @@ class PubSubClient:
         
     
     def _on_message(self, client, use_data, msg) -> None:
+        # Ejecutar logica edge
+        
+        # Publicar. el mensaje
         print(f"{msg.topic} {msg.payload}")
     
     
@@ -70,6 +73,6 @@ class PubSubClient:
         while self._connect:
             sleep(2)
             if self._connect == True:
-                self.publish(value={"message": "Hello from romzc"})
+                self.publish(value={"temperature": 28,"humidity": 80,"barometer": 1013,"wind": {"velocity": 22, "bearing": 255}})
 
         
