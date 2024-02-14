@@ -2,7 +2,6 @@ from PubSubClient import PubSubClient
 
 aws_host = "a12ynynm96xfyz-ats.iot.us-east-1.amazonaws.com"
 aws_port = 8883
-
 ca_path = "./certificados/AmazonRootCA1.pem"
 cert_path = "./certificados/4637e4d3ae5d829877ab46d2895b4f356e2a666fba68992e41766ff52c0aa4ad-certificate.pem.crt"
 key_path = "./certificados/4637e4d3ae5d829877ab46d2895b4f356e2a666fba68992e41766ff52c0aa4ad-private.pem.key"
