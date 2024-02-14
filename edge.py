@@ -6,18 +6,18 @@ import time
 
 last_message_time = 0
 
-aws_host = "a12ynynm96xfyz-ats.iot.us-east-1.amazonaws.com"
+aws_host = "***************"
 out_topic_aws = "device/25/data"  # Este es el tópico al cual se envía en el AWS IoT Core
-in_topic_aws = "in_topic"  # Este es el tópico desde el cual se recibe
+in_topic_aws = "************"  # Este es el tópico desde el cual se recibe
 port = 8883  # Este es el puerto de AWS IoT Core
 
-edge_host = "192.168.255.104"  # Este es el host de tu entorno local de edge computing
-in_topic_iot = "light"  # Este es el tópico con los datos que envía el ESP8266
-out_topic_iot = "iot_in"  # Este es el tópico que envía al ESP8266.
+edge_host = "*****"  # Este es el host de tu entorno local de edge computing
+in_topic_iot = "****"  # Este es el tópico con los datos que envía el ESP8266
+out_topic_iot = "*****"  # Este es el tópico que envía al ESP8266.
 
-ca_path = "./certificados/AmazonRootCA1.pem"
-cert_path = "./certificados/4637e4d3ae5d829877ab46d2895b4f356e2a666fba68992e41766ff52c0aa4ad-certificate.pem.crt"
-key_path = "./certificados/4637e4d3ae5d829877ab46d2895b4f356e2a666fba68992e41766ff52c0aa4ad-private.pem.key"
+ca_path = "************************"
+cert_path = "*************************"
+key_path = "****************************+"
 
 
 def on_message_from_aws(client, userdata, message):
